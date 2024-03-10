@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Digital Fingerprint Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .image-container {
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .description {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Digital Fingerprint: A Visualization of My Phone’s Apps</h1>
+        
+        <!-- Final Design -->
+        <div class="image-container">
+            <h2>Final Design</h2>
+            <img src="final-design.png" alt="Final Design">
+        </div>
+
+        <!-- Process Images -->
+        <div class="image-container">
+            <h2>Process Images</h2>
+            <p>
+                1. I investigated all the applications on my phone to determine which categories I should use and how many categories I should make.
+            </p>
+            <img src="app-screenshot.png" alt="Process Image 1" style="width:50%; height:auto;">
+            <p>
+                2. After deciding the categories, I labeled each application with related category.
+            </p>
+            <img src="process-excel.png" alt="Process Image 2" style="width:30%; height:auto;">
+            <p>
+                3. I created a bar graph to see the distribution.
+            </p>
+            <img src="process-bar-graph.png" alt="Process Image 3" style="width:30%; height:auto;">
+            <p>
+                4. I created a fingerprint design which is made up of 148 lines total.
+            </p>
+                <img src="fingerprint-raw.png" alt="Process Image 4" style="width:30%; height:auto;">
+            <p>
+                5. I chose a color to represent each category, and colored lines in the respective color corresponding to the number of apps in that category.
+            </p>
+            <img src="fingerprint-colored.png" alt="Process Image 5" style="width:30%; height:auto;">
+        </div>
+
+        <!-- Iteration -->
+        <div class="image-container">
+            <h2>Design Iteration</h2>
+            <p>
+                This is an iteration with another design that I tried.
+                In the initial stages of this project, I was drawn to the concept of a 'footprint' as the central theme for my data visualization, 
+                owing to its direct association with the word itself. I explored two primary designs that incorporated this idea. 
+                The first was to divide a single footprint into sections, each representing a different category of apps. 
+                The second concept was to create a series of footprints, each corresponding to a category, with the footprint size reflecting the number of apps in that category.
+                <br>
+                However, upon reflection, I found that while these designs were metaphorically relevant, 
+                they did not convey the usage intensity and personal engagement with each category in an intuitive manner. 
+                Moreover, they lacked the creative edge I was striving for. After further exploration, I decided on a fingerprint motif.
+            </p>
+            <img src="footprint-1.jpeg" alt="Design Iteration" style="width: 30%; height:auto;">
+            <img src="footprint-2.png" alt="Design Iteration" style="width: 60%; height:auto;">
+        </div>
+
+        <!-- Final Design and Process Description -->
+        <div class="description">
+            <h2>Final Design and Process</h2>
+            <p>
+                My project, titled "Digital Fingerprint: A Visualization of My Phone’s Apps," 
+                is a creative representation of the apps on my mobile phone, categorized into 10 distinct groups and visualized as a colorful fingerprint. 
+                This design approach was chosen to symbolize the unique and personal aspects of my digital footprint, akin to how a real fingerprint is distinct to an individual.
+                The process involved first listing all 148 apps on my phone and then categorizing each app based on its primary function.
+                The categories included Physical, Social, Travel, Financial, Food/Shopping, Entertainment/Other, School/Education, Calendar/Documentation, Utility, and Photo.
+                Each category was assigned a specific color, and the cumulative layout of these categories formed the shape of a fingerprint.
+                The fingerprint is made up of 148 lines.
+                Each line represents one application, and as the lines with same color are gathered together, they form a layer of the fingerprint.
+                This visualization journey from concept to final design involved several design decisions concerning color schemes, 
+                category divisions, and layout arrangements, ultimately leading to a final design that is both visually striking and meaningful.
+                <br><br>
+                In this visualization project, I integrated principles of data feminism by focusing on contextualization, narrative, challenging conventional norms, and inclusivity. Firstly, I went beyond basic categorization of apps by considering their roles in reflecting personal and societal dynamics, bringing a deeper context to the data. Secondly, I used the digital fingerprint design to narrate a story of my digital usage, moving past simple quantitative displays to a more nuanced and personal depiction. Thirdly, this project challenges traditional data visualization methods by using a unique, personalized symbol – the fingerprint. Lastly, the project was executed with an awareness of inclusivity, considering how my digital interactions might mirror wider societal patterns and access issues. This approach broadened the scope of the project, turning it into a reflective and socially-aware analysis of my digital footprint.
+               <br><br>
+               Here, I'm combining two sets of data that are not typically analyzed together: the names of the applications on your phone and the category of real-world activities they correspond to. Basically, I'm merging a personal, qualitative approach with a quantitative inventory. 
+            </p>
+        </div>
+
+        <!-- Data Collection Process Description -->
+        <div class="description">
+            <h2>Data Collection Process</h2>
+            <p>
+                It began with a comprehensive documentation of all the apps installed on my mobile phone, where each app’s name was carefully listed in an Excel sheet. This initial step was crucial, as it provided a clear overview of the digital tools at my disposal. The next phase involved a thoughtful categorization of these apps. I examined each app's primary function and utility to classify them into one of ten categories: Physical, Social, Travel, Financial, Food/Shopping, Entertainment/Other, School/Education, Calendar/Documentation, Utility, and Photo. This methodical approach was not just about grouping apps together; it was an exploration of my interaction patterns with these digital resources. By analyzing these categories, I gained valuable insights into which types of apps were most predominant in my daily life and how they collectively paint a picture of my digital habits and preferences. The data collection and categorization process laid a critical foundation for the visualization, ultimately reflecting my unique digital fingerprint through the apps I use.
+                <br><br>
+                Below is the table of all the applications categorized.
+            </p>
+            <h2></h2>
+            <style>
+                #app_table thead { 
+                    background-color: #ABCBF6; 
+                }
+                #app_table th {
+                    font-weight: bold;
+                }
+              </style>
+            <table border="1" class="table table-striped" id="app_table">
+                <thead>
+                    <tr style="text-align: left;">
+                      <th>Name of Application</th>
+                      <th>Category</th>
+                    </tr>
+                  </thead>
+                <!-- <tr class="row0">
+                    <td class="column0 style0 s">Name of  Application</td>
+                    <td class="column1 style0 s">Category</td>
+                  </tr> -->
+                  <tbody>
+                  <tr class="row1">
+                    <td class="column0 style0 s">Google Maps</td>
+                    <td class="column1 style0 s">Travel</td>
+                  </tr>
+                  <tr class="row2">
+                    <td class="column0 style0 s">Gmail</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row3">
+                    <td class="column0 style0 s">Notes</td>
+                    <td class="column1 style0 s">Calendar/Documentation</td>
+                  </tr>
+                  <tr class="row4">
+                    <td class="column0 style0 s">Outlook</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row5">
+                    <td class="column0 style0 s">Photos</td>
+                    <td class="column1 style0 s">Photo</td>
+                  </tr>
+                  <tr class="row6">
+                    <td class="column0 style0 s">Camera</td>
+                    <td class="column1 style0 s">Photo</td>
+                  </tr>
+                  <tr class="row7">
+                    <td class="column0 style0 s">Canvas Student</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row8">
+                    <td class="column0 style0 s">Clock</td>
+                    <td class="column1 style0 s">Utility</td>
+                  </tr>
+                  <tr class="row9">
+                    <td class="column0 style0 s">Livvi</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row10">
+                    <td class="column0 style0 s">Naver English Dictionary</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row11">
+                    <td class="column0 style0 s">Papago</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row12">
+                    <td class="column0 style0 s">Teams</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row13">
+                    <td class="column0 style0 s">Slack</td>
+                    <td class="column1 style0 s">Social</td>
+                  </tr>
+                  <tr class="row14">
+                    <td class="column0 style0 s">Discord</td>
+                    <td class="column1 style0 s">Social</td>
+                  </tr>
+                  <tr class="row15">
+                    <td class="column0 style0 s">GroupMe</td>
+                    <td class="column1 style0 s">Social</td>
+                  </tr>
+                  <tr class="row16">
+                    <td class="column0 style0 s">Facebook Messanger</td>
+                    <td class="column1 style0 s">Social</td>
+                  </tr>
+                  <tr class="row17">
+                    <td class="column0 style0 s">Robinhood</td>
+                    <td class="column1 style0 s">Financial</td>
+                  </tr>
+                  <tr class="row18">
+                    <td class="column0 style0 s">SeekingAlpha</td>
+                    <td class="column1 style0 s">Financial</td>
+                  </tr>
+                  <tr class="row19">
+                    <td class="column0 style0 s">Chase</td>
+                    <td class="column1 style0 s">Financial</td>
+                  </tr>
+                  <tr class="row20">
+                    <td class="column0 style0 s">BofA</td>
+                    <td class="column1 style0 s">Financial</td>
+                  </tr>
+                  <tr class="row21">
+                    <td class="column0 style0 s">HanaBank</td>
+                    <td class="column1 style0 s">Financial</td>
+                  </tr>
+                  <tr class="row22">
+                    <td class="column0 style0 s">HanaPay</td>
+                    <td class="column1 style0 s">Financial</td>
+                  </tr>
+                  <tr class="row23">
+                    <td class="column0 style0 s">Wallet</td>
+                    <td class="column1 style0 s">Financial</td>
+                  </tr>
+                  <tr class="row24">
+                    <td class="column0 style0 s">Venmo</td>
+                    <td class="column1 style0 s">Financial</td>
+                  </tr>
+                  <tr class="row25">
+                    <td class="column0 style0 s">Toss</td>
+                    <td class="column1 style0 s">Financial</td>
+                  </tr>
+                  <tr class="row26">
+                    <td class="column0 style0 s">MOIN</td>
+                    <td class="column1 style0 s">Financial</td>
+                  </tr>
+                  <tr class="row27">
+                    <td class="column0 style0 s">WireBarley</td>
+                    <td class="column1 style0 s">Financial</td>
+                  </tr>
+                  <tr class="row28">
+                    <td class="column0 style0 s">GT Mobile Order</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row29">
+                    <td class="column0 style0 s">Uber</td>
+                    <td class="column1 style0 s">Travel</td>
+                  </tr>
+                  <tr class="row30">
+                    <td class="column0 style0 s">Lyft</td>
+                    <td class="column1 style0 s">Travel</td>
+                  </tr>
+                  <tr class="row31">
+                    <td class="column0 style0 s">Instacart</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row32">
+                    <td class="column0 style0 s">Rakuten</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row33">
+                    <td class="column0 style0 s">Uber Eats</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row34">
+                    <td class="column0 style0 s">Ibotta</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row35">
+                    <td class="column0 style0 s">Yelp</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row36">
+                    <td class="column0 style0 s">Luxer One</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row37">
+                    <td class="column0 style0 s">DoorDash</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row38">
+                    <td class="column0 style0 s">Starbucks</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row39">
+                    <td class="column0 style0 s">Files</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row40">
+                    <td class="column0 style0 s">Voice Memos</td>
+                    <td class="column1 style0 s">Utility</td>
+                  </tr>
+                  <tr class="row41">
+                    <td class="column0 style0 s">Compass</td>
+                    <td class="column1 style0 s">Utility</td>
+                  </tr>
+                  <tr class="row42">
+                    <td class="column0 style0 s">Measure</td>
+                    <td class="column1 style0 s">Utility</td>
+                  </tr>
+                  <tr class="row43">
+                    <td class="column0 style0 s">Calculator</td>
+                    <td class="column1 style0 s">Utility</td>
+                  </tr>
+                  <tr class="row44">
+                    <td class="column0 style0 s">Symplicity</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row45">
+                    <td class="column0 style0 s">Zoom</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row46">
+                    <td class="column0 style0 s">Grammarly</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row47">
+                    <td class="column0 style0 s">Career Fair Plus</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row48">
+                    <td class="column0 style0 s">Handshake</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row49">
+                    <td class="column0 style0 s">DocScanner</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row50">
+                    <td class="column0 style0 s">LiveSafe</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row51">
+                    <td class="column0 style0 s">Duo Mobile</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row52">
+                    <td class="column0 style0 s">Paharos Print</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row53">
+                    <td class="column0 style0 s">Apple TV</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row54">
+                    <td class="column0 style0 s">News</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row55">
+                    <td class="column0 style0 s">Tips</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row56">
+                    <td class="column0 style0 s">Apple Books</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row57">
+                    <td class="column0 style0 s">Home</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row58">
+                    <td class="column0 style0 s">iTunes Store</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row59">
+                    <td class="column0 style0 s">Keynote</td>
+                    <td class="column1 style0 s">Calendar/Documentation</td>
+                  </tr>
+                  <tr class="row60">
+                    <td class="column0 style0 s">Apple Store</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row61">
+                    <td class="column0 style0 s">Clips</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row62">
+                    <td class="column0 style0 s">iMovie</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row63">
+                    <td class="column0 style0 s">Pages</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row64">
+                    <td class="column0 style0 s">GarageBand</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row65">
+                    <td class="column0 style0 s">Numbers</td>
+                    <td class="column1 style0 s">Calendar/Documentation</td>
+                  </tr>
+                  <tr class="row66">
+                    <td class="column0 style0 s">Apple Maps</td>
+                    <td class="column1 style0 s">Travel</td>
+                  </tr>
+                  <tr class="row67">
+                    <td class="column0 style0 s">Find My</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row68">
+                    <td class="column0 style0 s">Translate</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row69">
+                    <td class="column0 style0 s">Apple Music</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row70">
+                    <td class="column0 style0 s">Shortcuts</td>
+                    <td class="column1 style0 s">Utility</td>
+                  </tr>
+                  <tr class="row71">
+                    <td class="column0 style0 s">Weather</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row72">
+                    <td class="column0 style0 s">Mail</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row73">
+                    <td class="column0 style0 s">Reminders</td>
+                    <td class="column1 style0 s">Utility</td>
+                  </tr>
+                  <tr class="row74">
+                    <td class="column0 style0 s">Contacts</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row75">
+                    <td class="column0 style0 s">Health</td>
+                    <td class="column1 style0 s">Physical</td>
+                  </tr>
+                  <tr class="row76">
+                    <td class="column0 style0 s">Fitness</td>
+                    <td class="column1 style0 s">Physical</td>
+                  </tr>
+                  <tr class="row77">
+                    <td class="column0 style0 s">AutoSleep</td>
+                    <td class="column1 style0 s">Physical</td>
+                  </tr>
+                  <tr class="row78">
+                    <td class="column0 style0 s">Millie's Book</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row79">
+                    <td class="column0 style0 s">Photowidget</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row80">
+                    <td class="column0 style0 s">OliveYoung</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row81">
+                    <td class="column0 style0 s">Jumsin</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row82">
+                    <td class="column0 style0 s">Gmarket Global</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row83">
+                    <td class="column0 style0 s">Bird</td>
+                    <td class="column1 style0 s">Travel</td>
+                  </tr>
+                  <tr class="row84">
+                    <td class="column0 style0 s">TheDayBefore</td>
+                    <td class="column1 style0 s">Calendar/Documentation</td>
+                  </tr>
+                  <tr class="row85">
+                    <td class="column0 style0 s">Bringko</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row86">
+                    <td class="column0 style0 s">Blind</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row87">
+                    <td class="column0 style0 s">Slides</td>
+                    <td class="column1 style0 s">Calendar/Documentation</td>
+                  </tr>
+                  <tr class="row88">
+                    <td class="column0 style0 s">Pedometer</td>
+                    <td class="column1 style0 s">Physical</td>
+                  </tr>
+                  <tr class="row89">
+                    <td class="column0 style0 s">Google Freeform</td>
+                    <td class="column1 style0 s">Utility</td>
+                  </tr>
+                  <tr class="row90">
+                    <td class="column0 style0 s">Apple Calendar</td>
+                    <td class="column1 style0 s">Calendar/Documentation</td>
+                  </tr>
+                  <tr class="row91">
+                    <td class="column0 style0 s">Sheets</td>
+                    <td class="column1 style0 s">Calendar/Documentation</td>
+                  </tr>
+                  <tr class="row92">
+                    <td class="column0 style0 s">Dropbox</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row93">
+                    <td class="column0 style0 s">Authenticator</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row94">
+                    <td class="column0 style0 s">Clipper</td>
+                    <td class="column1 style0 s">Travel</td>
+                  </tr>
+                  <tr class="row95">
+                    <td class="column0 style0 s">Spirit</td>
+                    <td class="column1 style0 s">Travel</td>
+                  </tr>
+                  <tr class="row96">
+                    <td class="column0 style0 s">Frontier</td>
+                    <td class="column1 style0 s">Travel</td>
+                  </tr>
+                  <tr class="row97">
+                    <td class="column0 style0 s">Airbnb</td>
+                    <td class="column1 style0 s">Travel</td>
+                  </tr>
+                  <tr class="row98">
+                    <td class="column0 style0 s">Trip.com</td>
+                    <td class="column1 style0 s">Travel</td>
+                  </tr>
+                  <tr class="row99">
+                    <td class="column0 style0 s">Zipcar</td>
+                    <td class="column1 style0 s">Travel</td>
+                  </tr>
+                  <tr class="row100">
+                    <td class="column0 style0 s">Coupang</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row101">
+                    <td class="column0 style0 s">Hwahae</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row102">
+                    <td class="column0 style0 s">Zigzag</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row103">
+                    <td class="column0 style0 s">Naver Map</td>
+                    <td class="column1 style0 s">Travel</td>
+                  </tr>
+                  <tr class="row104">
+                    <td class="column0 style0 s">T world</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row105">
+                    <td class="column0 style0 s">Crocket</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row106">
+                    <td class="column0 style0 s">Pocket CU</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row107">
+                    <td class="column0 style0 s">TenTen Arcade</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row108">
+                    <td class="column0 style0 s">ClassPass</td>
+                    <td class="column1 style0 s">Physical</td>
+                  </tr>
+                  <tr class="row109">
+                    <td class="column0 style0 s">Orangetheory</td>
+                    <td class="column1 style0 s">Physical</td>
+                  </tr>
+                  <tr class="row110">
+                    <td class="column0 style0 s">PointSolutions</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row111">
+                    <td class="column0 style0 s">Foodie</td>
+                    <td class="column1 style0 s">Photo</td>
+                  </tr>
+                  <tr class="row112">
+                    <td class="column0 style0 s">Amazon</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row113">
+                    <td class="column0 style0 s">LinkedIn</td>
+                    <td class="column1 style0 s">Social</td>
+                  </tr>
+                  <tr class="row114">
+                    <td class="column0 style0 s">Facebook</td>
+                    <td class="column1 style0 s">Social</td>
+                  </tr>
+                  <tr class="row115">
+                    <td class="column0 style0 s">Instagram</td>
+                    <td class="column1 style0 s">Social</td>
+                  </tr>
+                  <tr class="row116">
+                    <td class="column0 style0 s">YouTube</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row117">
+                    <td class="column0 style0 s">Reddit</td>
+                    <td class="column1 style0 s">Social</td>
+                  </tr>
+                  <tr class="row118">
+                    <td class="column0 style0 s">Flo</td>
+                    <td class="column1 style0 s">Physical</td>
+                  </tr>
+                  <tr class="row119">
+                    <td class="column0 style0 s">YoutTube Music</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row120">
+                    <td class="column0 style0 s">Snapseed</td>
+                    <td class="column1 style0 s">Photo</td>
+                  </tr>
+                  <tr class="row121">
+                    <td class="column0 style0 s">Meitu</td>
+                    <td class="column1 style0 s">Photo</td>
+                  </tr>
+                  <tr class="row122">
+                    <td class="column0 style0 s">Notion</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row123">
+                    <td class="column0 style0 s">Netflix</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row124">
+                    <td class="column0 style0 s">Temu</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row125">
+                    <td class="column0 style0 s">VLLO</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row126">
+                    <td class="column0 style0 s">Google Drive</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row127">
+                    <td class="column0 style0 s">ChatGPT</td>
+                    <td class="column1 style0 s">School/Education</td>
+                  </tr>
+                  <tr class="row128">
+                    <td class="column0 style0 s">YT Studio</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row129">
+                    <td class="column0 style0 s">Threads</td>
+                    <td class="column1 style0 s">Social</td>
+                  </tr>
+                  <tr class="row130">
+                    <td class="column0 style0 s">SNOW</td>
+                    <td class="column1 style0 s">Photo</td>
+                  </tr>
+                  <tr class="row131">
+                    <td class="column0 style0 s">Apple Watch</td>
+                    <td class="column1 style0 s">Physical</td>
+                  </tr>
+                  <tr class="row132">
+                    <td class="column0 style0 s">Google Calendar</td>
+                    <td class="column1 style0 s">Calendar/Documentation</td>
+                  </tr>
+                  <tr class="row133">
+                    <td class="column0 style0 s">Podcasts</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row134">
+                    <td class="column0 style0 s">VITA</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row135">
+                    <td class="column0 style0 s">Settings</td>
+                    <td class="column1 style0 s">Utility</td>
+                  </tr>
+                  <tr class="row136">
+                    <td class="column0 style0 s">Coupang Eats</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row137">
+                    <td class="column0 style0 s">Baemin</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row138">
+                    <td class="column0 style0 s">WhatsApp</td>
+                    <td class="column1 style0 s">Social</td>
+                  </tr>
+                  <tr class="row139">
+                    <td class="column0 style0 s">Disney+</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row140">
+                    <td class="column0 style0 s">American Airlines</td>
+                    <td class="column1 style0 s">Travel</td>
+                  </tr>
+                  <tr class="row141">
+                    <td class="column0 style0 s">Pinterest</td>
+                    <td class="column1 style0 s">Photo</td>
+                  </tr>
+                  <tr class="row142">
+                    <td class="column0 style0 s">Kakaotalk</td>
+                    <td class="column1 style0 s">Social</td>
+                  </tr>
+                  <tr class="row143">
+                    <td class="column0 style0 s">Safari</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row144">
+                    <td class="column0 style0 s">iMessage</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row145">
+                    <td class="column0 style0 s">Subway</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row146">
+                    <td class="column0 style0 s">Chipotle</td>
+                    <td class="column1 style0 s">Food/Shopping</td>
+                  </tr>
+                  <tr class="row147">
+                    <td class="column0 style0 s">Spotify</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                  <tr class="row148">
+                    <td class="column0 style0 s">Twitch</td>
+                    <td class="column1 style0 s">Entertainment/Other</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</body>
+</html>
